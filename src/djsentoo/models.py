@@ -26,12 +26,14 @@ class Transaction(models.Model):
         max_length=20,
         choices=TransactionStatusChoices.choices,
         default=TransactionStatusChoices.ISSUED,
+        db_index=True,
     )
     amount = models.IntegerField(default=0)
     currency = models.CharField(
         max_length=3,
         choices=CurrencyChoices.choices,
         default=CurrencyChoices.XCG,
+        db_index=True,
     )
     merchant_id = models.CharField(max_length=46)
     description = models.CharField(max_length=255)
