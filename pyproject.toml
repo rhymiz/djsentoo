@@ -11,7 +11,7 @@ homepage = "https://github.com/rhymiz/djsentoo"
 requires-python = ">=3.12"
 dependencies = [
     "django>=5.2.1",
-    "sentoo>=0.1.8",
+    "sentoo>=0.2.0",
 ]
 classifiers = [
     "License :: OSI Approved :: MIT License",

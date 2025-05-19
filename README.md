@@ -70,11 +70,11 @@ python manage.py migrate djsentoo
 ### Creating a payment
 
 ```python
-from djsentoo.wrapper import PaymentWrapper
+from djsentoo.service import SentooPaymentService
 
 # Create a payment
-payment = PaymentWrapper()
-response = payment.create_payment(
+service = SentooPaymentService()
+response = service.create_payment(
     amount=5000,  # 50.00 in cents
     currency='USD',
     description='Payment for Order #12345',

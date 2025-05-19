@@ -26,7 +26,7 @@ def get_sentoo_client() -> Sentoo:
     )
 
 
-class PaymentWrapper:
+class SentooPaymentService:
     def __init__(self) -> None:
         self._config = get_sentoo_settings()
         self._client = get_sentoo_client()
