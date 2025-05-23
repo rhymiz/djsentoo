@@ -4,8 +4,8 @@ from django.views.decorators.http import require_POST
 
 from djsentoo.forms import WebhookForm
 from djsentoo.models import Transaction
-from djsentoo.signals import sentoo_transaction_status_changed
 from djsentoo.service import get_sentoo_client
+from djsentoo.signals import sentoo_transaction_status_changed
 
 
 @require_POST
