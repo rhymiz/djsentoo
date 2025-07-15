@@ -3,7 +3,9 @@
 [![PyPI version](https://badge.fury.io/py/djsentoo.svg)](https://badge.fury.io/py/djsentoo)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-A Django app for integrating with the Sentoo payment gateway.
+An unofficial Django app for integrating with the Sentoo payment gateway.
+
+Note: This project is not officially supported by Sentoo.
 
 ## Overview
 
