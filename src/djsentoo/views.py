@@ -13,7 +13,7 @@ from djsentoo.signals import sentoo_transaction_status_changed
 def sentoo_webhook(request: HttpRequest) -> JsonResponse:
     form = WebhookForm(request.POST)
     if not form.is_valid():
-        return JsonResponse({"status": "invalid"}, status=400)
+        return JsonResponse({"success": False}, status=400)
 
     transaction: Transaction = form.cleaned_data["transaction_id"]
     client = get_sentoo_client()
@@ -28,6 +28,6 @@ def sentoo_webhook(request: HttpRequest) -> JsonResponse:
             sender=None,
             transaction=transaction,
         )
-        return JsonResponse({"status": "success"}, status=200)
+        return JsonResponse({"success": True}, status=200)
 
-    return JsonResponse({"status": "error"}, status=500)
+    return JsonResponse({"success": False}, status=500)
