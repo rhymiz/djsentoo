@@ -115,11 +115,11 @@ def handle_payment_update(sender, transaction, **kwargs):
 
 ## Documentation
 
-For detailed documentation, see the [full documentation](link-to-your-docs).
+For detailed documentation, see the [full documentation](https://developer.sentoo.io/).
 
 ## Support
 
-If you encounter any issues or have questions, please [open an issue](link-to-issues) on GitHub.
+If you encounter any issues or have questions, please open an issue.
 
 ## License
 
